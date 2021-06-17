@@ -56,6 +56,7 @@ public class Peliculas {
     public void setDisponible(boolean disponible){
         this.disponible = disponible;
     }
+    // terminado metodos getters y setters 
 
     public String getInformacionPeli() {
         String resultado = "Id: " + idPel + "titulo de la pelicula: " + titulo + "Categoria: " +categoria;
