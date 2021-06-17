@@ -5,20 +5,18 @@ public class Peliculas {
     private int idPel;
     private String titulo;
     private String categoria;
-    private int año;
-    private boolean disponible;
+    private int year;
 
     //constructor con parametros
-    public Peliculas(int idPel,String titulo,String categoria,int año,boolean disponible){
+    public Peliculas(int idPel,String titulo,String categoria,int year){
         this.idPel = idPel;
         this.titulo = titulo;
         this.categoria = categoria;
-        this.año = año;
-        this.disponible = disponible; 
+        this.year = year; 
     }
 
-    public Peliculas(int idPel,String titulo,String categoria,int año){
-        this(idPel,titulo,categoria,año);
+    public Peliculas(int idPel,String titulo,String categoria){
+        this(idPel,titulo,categoria,0);
     }
     
     //creando getters y setters
@@ -43,19 +41,13 @@ public class Peliculas {
         this.categoria = categoria; 
     }
 
-    public int getAño(){
-        return año;
+    public int getYear(){
+        return year;
     }
-    public void setAño(int año){
-        this.año = año;
+    public void setYear(int year){
+        this.year = year;
     }
 
-    public boolean getDisponible(){
-        return disponible;
-    }
-    public void setDisponible(boolean disponible){
-        this.disponible = disponible;
-    }
     // terminado metodos getters y setters 
 
     public String getInformacionPeli() {
